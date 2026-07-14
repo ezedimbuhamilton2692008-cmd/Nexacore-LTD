@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEXACORE LTD - Website Design, Google Maps Setup & Graphics in Ibadan</title>
+<meta name="description" content="NEXACORE LTD builds websites that bring you customers. Website Design, Google Maps GMB Setup, and Graphics Design in Ibadan. Call 07079121697">
+<style>
+  :root {
+    --black: #000;
+    --gold: #D4AF37;
+    --white: #FFFFFF;
+  }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+  body { background: var(--white); color: var(--black); line-height: 1.6; }
+  .container { width: 90%; max-width: 1200px; margin: auto; }
+  header { background: var(--black); color: var(--white); padding: 20px 0; position: sticky; top: 0; z-index: 1000; }
+  nav { display: flex; justify-content: space-between; align-items: center; }
+  .logo { font-size: 24px; font-weight: bold; color: var(--gold); }
+  nav a { color: var(--white); text-decoration: none; margin: 0 15px; font-weight: 500; }
+  nav a:hover { color: var(--gold); }
+  .btn { background: var(--gold); color: var(--black); padding: 12px 24px; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; text-decoration: none; display: inline-block; transition: 0.3s; }
+  .btn:hover { opacity: 0.9; transform: translateY(-2px); }
+  .btn-outline { background: transparent; border: 2px solid var(--gold); color: var(--gold); }
+  
+  /* HERO */
+  .hero { background: var(--black); color: var(--white); padding: 120px 0; text-align: left; }
+  .hero h1 { font-size: 48px; color: var(--gold); margin-bottom: 20px; line-height: 1.2; }
+  .hero p { font-size: 18px; margin-bottom: 30px; }
+  .icons { display: flex; gap: 30px; margin-top: 40px; flex-wrap: wrap; }
+  .icon-box { text-align: center; font-size: 16px; }
+  .icon-box { font-size: 32px; }
+  
+  /* SECTIONS */
+  section { padding: 80px 0; }
+  .section-title { text-align: center; font-size: 36px; margin-bottom: 50px; color: var(--black); }
+  .section-title span { color: var(--gold); }
+  .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+  .service-card { background: #f9f9f9; padding: 30px; border-left: 4px solid var(--gold); border-radius: 8px; }
+  .service-card h3 { color: var(--black); margin-bottom: 10px; }
+  
+  .portfolio { background: var(--black); color: var(--white); }
+  .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+  .portfolio-item { background: #111; height: 250px; border: 2px solid var(--gold); border-radius: 8px; overflow: hidden; position: relative; display: flex; align-items: center; justify-content: center; }
+  .portfolio-item img { width: 100%; height: 100%; object-fit: cover; }
+  .portfolio-caption { position: absolute; background: rgba(0,0,0,0.8); color: var(--gold); padding: 8px 10px; bottom: 0; width: 100%; text-align: center; font-size: 14px; font-weight: bold; }
+  
+  .testimonials { background: #f9f9f9; }
+  .testimonial { background: var(--white); padding: 30px; border-radius: 8px; border-bottom: 3px solid var(--gold); margin-bottom: 20px; }
+  
+  .contact-info { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+  .contact-box { background: var(--black); color: var(--white); padding: 30px; border-radius: 8px; text-align: center; }
+  .contact-box h3 { color: var(--gold); margin-bottom: 10px; }
+  .contact-box a { color: var(--gold); text-decoration: none; font-size: 18px; }
+  
+  footer { background: var(--black); color: var(--white); text-align: center; padding: 30px 0; border-top: 2px solid var(--gold); }
+  
+  /* WHATSAPP FLOAT */
+  .whatsapp { position: fixed; bottom: 20px; right: 20px; background: var(--gold); color: var(--black); padding: 15px 25px; border-radius: 50px; font-weight: bold; text-decoration: none; z-index: 999; box-shadow: 0 4px 15px rgba(212,175,55,0.4); }
+  
+  @media(max-width:768px){
+    .hero h1 { font-size: 32px; }
+    nav a { display: none; }
+    .icons { justify-content: center; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo">NEXACORE LTD</div>
+      <div>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- 1. HOMEPAGE / HERO -->
+<section class="hero" id="home">
+  <div class="container">
+    <h1>We Build Websites That Bring You Customers</h1>
+    <p>Website Design + Google Maps Setup + Graphics Design in Ibadan</p>
+    <a href="#contact" class="btn">Get A Website</a>
+    <a href="#portfolio" class="btn btn-outline">See Our Work</a>
+    
+    <div class="icons">
+      <div class="icon-box">🌐<br>Website Design</div>
+      <div class="icon-box">📍<br>Google Maps Setup</div>
+      <div class="icon-box">🎨<br>Graphic Design</div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. SERVICES -->
+<section id="services">
+  <div class="container">
+    <h2 class="section-title">Our <span>Services</span></h2>
+    <div class="services">
+      <div class="service-card">
+        <h3>Website Design</h3>
+        <p>Business websites, e-commerce stores, and high-converting landing pages. Mobile friendly + SEO ready to rank on Google.</p>
+      </div>
+      <div class="service-card">
+        <h3>Google Maps / GMB Setup</h3>
+        <p>"Get found on Google when people search near you". We set up and optimize your Google Business Profile for more calls and visits.</p>
+      </div>
+      <div class="service-card">
+        <h3>Graphics Design</h3>
+        <p>Logos, flyers, social media posts, and complete brand identity that makes your business stand out and look premium.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. PORTFOLIO - WITH YOUR IMAGE -->
+<section class="portfolio" id="portfolio">
+  <div class="container">
+    <h2 class="section-title" style="color:var(--white)">Our <span>Work</span></h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <img src="An-5Vt9UzuJRRCL-K37_gM1ZE3ny5f7ks9iQURE11AHOFujzGszQK9CFAZT7XWK8uJQ3iGDLsVLolhyfqF-KpcaIAenuSCuPICwbt_bVchcziiAc3XIpsL-h" alt="NEXACORE LTD GitHub Project">
+        <div class="portfolio-caption">GitHub Repo: Nexacore-LTD Project</div>
+      </div>
+      <div class="portfolio-item"><span style="color:var(--gold)">[Website Screenshot 1]</span></div>
+      <div class="portfolio-item"><span style="color:var(--gold)">[Flyer Design 1]</span></div>
+      <div class="portfolio-item"><span style="color:var(--gold)">[Logo Design]</span></div>
+      <div class="portfolio-item"><span style="color:var(--gold)">[E-commerce Site]</span></div>
+      <div class="portfolio-item"><span style="color:var(--gold)">[Social Media Post]</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. ABOUT US -->
+<section id="about">
+  <div class="container">
+    <h2 class="section-title">About <span>NEXACORE LTD</span></h2>
+    <p style="text-align:center; max-width:800px; margin:auto; font-size:18px;">
+      At NEXACORE LTD, we started with one mission: to help small businesses in Ibadan look big online. 
+      We noticed most companies were losing customers because they had no website or couldn’t be found on Google. 
+      So we combined website design, Google Maps marketing, and creative graphics into one package. 
+      Today, we’ve helped dozens of businesses get more calls, more walk-ins, and more sales. 
+      Your growth is our mission.
+    </p>
+    <div style="text-align:center; margin-top:30px; color:#777;">[Add Your Photo / Team Photo Here]</div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="container">
+    <h2 class="section-title">What Clients Say <span>★ As Seen on Google</span></h2>
+    <div class="testimonial">
+      <p>"NEXACORE built our website in 5 days. We started getting calls from Google the next week. Professional team!"</p>
+      <strong>- Adebayo Stores, Ibadan</strong>
+    </div>
+    <div class="testimonial">
+      <p>"They set up our Google Maps and designed our logo. Now customers find us easily. Highly recommend NEXACORE LTD."</p>
+      <strong>- Grace Beauty Salon</strong>
+    </div>
+  </div>
+</section>
+
+<!-- 5. CONTACT -->
+<section id="contact">
+  <div class="container">
+    <h2 class="section-title">Contact <span>Us</span></h2>
+    <div class="contact-info">
+      <div class="contact-box">
+        <h3>Call Us</h3>
+        <p><a href="tel:07079121697">0707 912 1697</a></p>
+        <p><a href="tel:09012947807">0901 294 7807</a></p>
+      </div>
+      <div class="contact-box">
+        <h3>Email Us</h3>
+        <p><a href="mailto:nexacore.limited12@gmail.com">nexacore.limited12@gmail.com</a></p>
+      </div>
+      <div class="contact-box">
+        <h3>Visit Us</h3>
+        <p>Ibadan, Oyo State, Nigeria</p>
+        <p style="color:#aaa; font-size:14px;"><i>[Embed Google Map here when ready]</i></p>
+      </div>
+    </div>
+    <form style="margin-top:40px; max-width:600px; margin:auto;">
+      <input type="text" placeholder="Your Name" required style="width:100%; padding:12px; margin:10px 0; border:1px solid #ccc; border-radius:6px;">
+      <input type="email" placeholder="Your Email" required style="width:100%; padding:12px; margin:10px 0; border:1px solid #ccc; border-radius:6px;">
+      <textarea placeholder="Your Message" required style="width:100%; padding:12px; margin:10px 0; border:1px solid #ccc; border-radius:6px; height:150px;"></textarea>
+      <button class="btn" type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 NEXACORE LTD. All Rights Reserved. | Website Designer in Ibadan</p>
+</footer>
+
+<!-- WHATSAPP
